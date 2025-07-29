@@ -1,0 +1,9 @@
+{% extends 'web/base.html' %}
+{% block title %}Главная — BizVision{% endblock %}
+{% block content %}
+<section class="text-center max-w-4xl mx-auto">
+  <h2 class="text-4xl font-bold mb-4">Мы создаём цифровые решения</h2>
+  <p class="text-lg mb-6">Разрабатываем сайты, оптимизируем бизнес, помогаем расти в интернете</p>
+  <a href="{% url 'solutions' %}" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Посмотреть решения</a>
+</section>
+{% endblock %}
