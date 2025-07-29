@@ -2,41 +2,44 @@
 <html lang="ru">
 {% load static %}
 <head>
-  <meta charset="UTF-8" />
-  <title>{% block title %}BizVision — Решения для бизнеса{% endblock %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="{% block meta_description %}Мы создаем сайты и IT-решения для бизнеса.{% endblock %}">
-  <meta name="keywords" content="бизнес, сайты, IT, разработка, digital, продвижение">
-  <meta name="author" content="BizVision">
-
-  <meta property="og:title" content="{% block og_title %}BizVision{% endblock %}" />
-  <meta property="og:description" content="{% block og_description %}Цифровые решения для вашего бизнеса{% endblock %}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/" />
-  <meta property="og:image" content="https://yourdomain.com/static/main/og-image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-<!--  <link rel="icon" href="{% static 'web/favicon.ico' %}" />-->
-  <link rel="canonical" href="https://yourdomain.com{% block canonical %}/{% endblock %}">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}AI-решения и боты под ключ{% endblock %}</title>
+    <meta name="description" content="Создаём AI-агентов и Telegram-ботов на Python, Django, FastAPI. Современные IT-решения для бизнеса." />
+    <link rel="stylesheet" href="{% static 'css/tailwind.css' %}" />
+    <script defer src="{% static 'js/main.js' %}"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-xl font-bold">BizVision</h1>
-      <nav class="space-x-4">
-        <a href="{% url 'index' %}" class="hover:text-blue-400">Главная</a>
-        <a href="{% url 'solutions' %}" class="hover:text-blue-400">Решения</a>
-        <a href="{% url 'works' %}" class="hover:text-blue-400">Наши работы</a>
-        <a href="{% url 'contacts' %}" class="hover:text-blue-400">Контакты</a>
-      </nav>
-    </div>
-  </header>
-  <main class="py-10 px-4">
-    {% block content %}{% endblock %}
-  </main>
-  <footer class="bg-primary text-white text-center py-6">
-    <p>&copy; 2025 BizVision. Все права защищены.</p>
-  </footer>
+<body class="bg-white text-gray-800 scroll-smooth">
+
+    <!-- Навигация -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600">Autelix</a>
+            <nav class="space-x-6">
+                <a href="/" class="hover:text-indigo-600 transition">Главная</a>
+                <a href="/solutions/" class="hover:text-indigo-600 transition">Решения</a>
+                <a href="/portfolio/" class="hover:text-indigo-600 transition">Наши работы</a>
+                <a href="/contacts/" class="hover:text-indigo-600 transition">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Контент -->
+    <main class="min-h-screen">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p>&copy; 2025 Autelix. Все права защищены.</p>
+            <div class="space-x-4 mt-2 md:mt-0">
+                <a href="https://t.me/yourcompany" class="hover:text-indigo-400">Telegram</a>
+                <a href="mailto:info@autelix.dev" class="hover:text-indigo-400">info@autelix.dev</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

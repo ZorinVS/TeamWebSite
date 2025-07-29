@@ -18,6 +18,11 @@ def works(request):
     works = Work.objects.all().order_by('-created_at')
     return render(request, 'web/works.html', {'works': works})
 
+
+def portfolio(request):
+    works = Work.objects.all().order_by('-created_at')
+    return render(request, 'web/portfolio.html', {'works': works})
+
 def contacts(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)

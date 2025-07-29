@@ -11,5 +11,11 @@ echo "📦 Выполняем миграции..."
 python manage.py makemigrations
 python manage.py migrate
 
+echo "🎯 Собираем статику..."
+python manage.py collectstatic --noinput
+
+echo "🔑 Создаем суперпользователя..."
+python create_superuser.py
+
 echo "🚀 Запускаем Gunicorn..."
 exec gunicorn config.wsgi:application --bind 0.0.0.0:8000
