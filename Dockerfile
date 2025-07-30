@@ -24,7 +24,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
 COPY . .
 
 # 6. Tailwind build
-RUN npm install && npm run build
+# RUN npm install && npm run build
 
 # 7. Entrypoint
 COPY entrypoint.sh /app/entrypoint.sh

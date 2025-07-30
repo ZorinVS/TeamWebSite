@@ -1,0 +1,22 @@
+{% extends 'web/base.html' %}
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<section class="py-20 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="animate-fade-in bg-white p-10 rounded-3xl shadow-2xl transition duration-700 ease-out">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-6 tracking-tight">
+                {{ post.title }}
+            </h1>
+
+            <div class="prose max-w-none text-gray-800 text-lg leading-relaxed">
+                {{ post.get_content_as_html }}
+            </div>
+
+            <a href="{% url 'solutions' %}" class="inline-block mt-10 text-indigo-600 hover:text-indigo-800 font-medium transition">
+                ← Назад ко всем решениям
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

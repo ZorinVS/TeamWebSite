@@ -62,8 +62,8 @@ DATABASES = {
     }
 }
 
-LANGUAGE_CODE = 'ru-ru'
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'ru-Ru'
+TIME_ZONE = 'Europe/Moscow'
 USE_I18N = True
 USE_TZ = True
 

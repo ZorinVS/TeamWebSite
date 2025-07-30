@@ -1,17 +1,17 @@
 {% extends 'web/base.html' %}
 
-{% block title %}Решения для бизнеса{% endblock %}
+{% block title %}Лучшие кейсы для бизнеса{% endblock %}
 
 {% block content %}
-<section class="py-20">
+<section class="animate-fade-in py-20">
     <div class="max-w-6xl mx-auto px-4">
-        <h1 class="text-4xl font-bold mb-6">Лучшие решения для бизнеса</h1>
+        <h1 class="text-4xl font-bold mb-6">Блог</h1>
         <div class="grid md:grid-cols-2 gap-10">
             {% for post in posts %}
                 <div class="p-6 border rounded-xl shadow hover:shadow-lg transition">
                     <h2 class="text-2xl font-semibold text-indigo-600">{{ post.title }}</h2>
-                    <p class="text-gray-600 mt-2">{{ post.content|truncatechars:180 }}</p>
-                    <a href="/solutions/{{ post.slug }}/" class="inline-block mt-4 text-indigo-600 hover:underline">Подробнее</a>
+                    <p class="text-gray-600 mt-2">{{ post.get_content_as_html|truncatechars:180 }}</p>
+                    <a href="{% url 'solution_detail' pk=post.id %}" class="inline-block mt-4 text-indigo-600 hover:underline">Подробнее</a>
                 </div>
             {% endfor %}
         </div>

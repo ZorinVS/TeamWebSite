@@ -17,5 +17,9 @@ python manage.py collectstatic --noinput
 echo "🔑 Создаем суперпользователя..."
 python create_superuser.py
 
+echo "📝 Загружаем посты..."
+python manage.py load_posts
+
 echo "🚀 Запускаем Gunicorn..."
 exec gunicorn config.wsgi:application --bind 0.0.0.0:8000
+
