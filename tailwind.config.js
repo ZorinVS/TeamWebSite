@@ -5,10 +5,17 @@ module.exports = {
     "./web/templates/**/*.html",
     "./web/**/*.py",
   ],
-  // ← сюда добавляем
+
   safelist: [
     'hidden',
     'md:hidden',
+    'max-h-0',
+    'max-h-96',
+    'opacity-0',
+    'opacity-100',
+    'pointer-events-none',
+    'pointer-events-auto',
+    'rotate-45',
   ],
 
   theme: {
@@ -24,6 +31,7 @@ module.exports = {
       },
     },
   },
+
   plugins: [
     require('@tailwindcss/typography'),
   ],
