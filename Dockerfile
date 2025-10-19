@@ -1,7 +1,7 @@
 FROM python:3.12-slim
 
 # 1. Системные зависимости
-RUN apt-get update && apt-get install -y postgresql-client curl gnupg && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y postgresql-client curl gnupg gettext && rm -rf /var/lib/apt/lists/*
 
 # 2. Poetry
 RUN pip install --no-cache-dir poetry

@@ -1,7 +1,10 @@
 {% extends 'web/base.html' %}
-{% block title %}Наши работы{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Наши работы" %}{% endblock %}
+
 {% block content %}
-<h2 class="text-3xl font-bold text-center mb-6">Наши проекты</h2>
+<h2 class="text-3xl font-bold text-center mb-6">{% trans "Наши проекты" %}</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
   {% for work in works %}
     <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
@@ -10,7 +13,7 @@
       <p class="text-sm text-gray-600 mt-2">{{ work.description }}</p>
     </div>
   {% empty %}
-    <p class="text-center text-gray-500 col-span-3">Пока нет проектов.</p>
+    <p class="text-center text-gray-500 col-span-3">{% trans "Пока нет проектов." %}</p>
   {% endfor %}
 </div>
 {% endblock %}

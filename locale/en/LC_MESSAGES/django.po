@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 12:29+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: web/templates/web/base.html:23 web/templates/web/base.html:37
+#: web/templates/web/index.html:5
+msgid "Главная"
+msgstr "Home"
+
+#: web/templates/web/base.html:24 web/templates/web/base.html:38
+#: web/templates/web/solutions.html:9
+msgid "Блог"
+msgstr "Blog"
+
+#: web/templates/web/base.html:25 web/templates/web/base.html:39
+#: web/templates/web/portfolio.html:4 web/templates/web/portfolio.html:9
+msgid "Наши решения"
+msgstr "Our Solutions"
+
+#: web/templates/web/base.html:26 web/templates/web/base.html:40
+#: web/templates/web/index.html:18
+msgid "Оставить заявку"
+msgstr "Contact Us"
+
+#: web/templates/web/base.html:53
+msgid "Все права защищены."
+msgstr "All rights reserved."
+
+#: web/templates/web/contacts.html:5
+msgid "Свяжитесь с нами"
+msgstr "Get in Touch"
+
+#: web/templates/web/contacts.html:10 web/templates/web/feedback.html:4
+msgid "Оставьте заявку"
+msgstr "Submit Your Request"
+
+#: web/templates/web/contacts.html:14 web/templates/web/feedback.html:7
+msgid "Ваше имя"
+msgstr "Your Name"
+
+#: web/templates/web/contacts.html:22 web/templates/web/feedback.html:19
+msgid "Сообщение"
+msgstr "Message"
+
+#: web/templates/web/contacts.html:26 web/templates/web/feedback.html:27
+msgid "Отправить"
+msgstr "Send"
+
+#: web/templates/web/feedback.html:9
+msgid "Введите имя"
+msgstr "Enter your name"
+
+#: web/templates/web/feedback.html:15
+msgid "Введите email"
+msgstr "Enter your email"
+
+#: web/templates/web/feedback.html:22
+msgid "Введите сообщение..."
+msgstr "Enter your message..."
+
+#: web/templates/web/index.html:5
+msgid "AI-агенты и Telegram-боты под ключ"
+msgstr "AI Agents and Telegram Bots - Turnkey Solutions"
+
+#: web/templates/web/index.html:11
+msgid "Современные AI-решения и боты"
+msgstr "Modern AI Solutions and Bots"
+
+#: web/templates/web/index.html:13
+msgid ""
+"Создаем интеллектуальные системы, Telegram-ботов и автоматизацию бизнес-"
+"процессов на Python, Django и FastAPI."
+msgstr ""
+"We build intelligent systems, Telegram bots, and business process automation "
+"using Python, Django, and FastAPI."
+
+#: web/templates/web/index.html:42
+msgid "Наши услуги"
+msgstr "Our Services"
+
+#: web/templates/web/index.html:45
+msgid "AI-агенты и ассистенты"
+msgstr "AI Agents and Assistants"
+
+#: web/templates/web/index.html:46
+msgid ""
+"Разрабатываем персональных помощников на GPT и других LLM для ваших задач."
+msgstr ""
+"We develop personal assistants powered by GPT and other LLMs for your needs."
+
+#: web/templates/web/index.html:49
+msgid "Telegram-боты"
+msgstr "Telegram Bots"
+
+#: web/templates/web/index.html:50
+msgid "Интерактивные и мощные Telegram-боты на Python, с админ-панелью и API."
+msgstr "Interactive and powerful Telegram bots built with Python, featuring admin panels and APIs."
+
+#: web/templates/web/index.html:53
+msgid "Автоматизация процессов"
+msgstr "Process Automation"
+
+#: web/templates/web/index.html:54
+msgid "Системы для оптимизации вашего бизнеса: заявки, рассылки, мониторинг."
+msgstr "Systems to optimize your business: requests, notifications, monitoring."
+
+#: web/templates/web/solution_detail.html:19
+msgid "Назад ко всем решениям"
+msgstr "Back to All Solutions"
+
+#: web/templates/web/solutions.html:4
+msgid "Лучшие кейсы для бизнеса"
+msgstr "Best Cases for Business"
+
+#: web/templates/web/solutions.html:15
+msgid "Подробнее"
+msgstr "Read More"
+
+#: web/templates/web/works.html:4
+msgid "Наши работы"
+msgstr "Our Works"
+
+#: web/templates/web/works.html:7
+msgid "Наши проекты"
+msgstr "Our Projects"
+
+#: web/templates/web/works.html:16
+msgid "Пока нет проектов."
+msgstr "No projects yet."
